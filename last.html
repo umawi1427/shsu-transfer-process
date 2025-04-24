@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .main-wrapper {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #fff, #f0f0f0);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .box {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #28a745;
+            animation: bounce 1s infinite alternate;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 2s forwards;
+        }
+
+        .navigation-buttons {
+            margin-top: 30px;
+        }
+
+        .transfer-button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .transfer-button:hover {
+            background-color: #218838;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="box">
+            <h1>🎉 Congratulations!</h1>
+            <p>You have successfully completed all the steps for your SHSU application process!</p>
+            <p>We wish you the best of luck as you begin your academic journey at Sam Houston State University. 🎓</p>
+            <p>If you have any further questions or need assistance, feel free to reach out to SHSU Admissions.</p>
+            <p>We look forward to seeing you on campus!</p>
+            <p>our curriculum in shsu for 3rd and 4th grade:</p>
+            <img src="courses.jpeg" alt="SHSU Curriculum" class="step-image" style="width: 400px;"><br>
+            <div class="navigation-buttons">
+                <a href="index.html" class="transfer-button">Go to Homepage</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
